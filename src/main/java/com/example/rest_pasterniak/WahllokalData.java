@@ -3,6 +3,7 @@ package com.example.rest_pasterniak;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+
 public class WahllokalData {
     private String regionID;
     private String regionName;

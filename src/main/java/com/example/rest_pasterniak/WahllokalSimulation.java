@@ -28,9 +28,7 @@ public class WahllokalSimulation {
 
         );
 
-        for (PartyVotes vote : votes) {
-            System.out.println(vote.getPartyName());
-        }
+
 
         data.setStimmen(votes);
 

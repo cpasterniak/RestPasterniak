@@ -1,7 +1,11 @@
 package com.example.rest_pasterniak;
 
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
 import java.util.List;
 
+@XmlRootElement
 public class PartyVotes {
     private String partyName;
     private int votes;
@@ -13,6 +17,7 @@ public class PartyVotes {
         setPreferredMemberVotes(preferredMemberVotes);
     }
 
+    @XmlElement
     public String getPartyName() {
         return partyName;
     }
@@ -21,14 +26,17 @@ public class PartyVotes {
         this.partyName = partyName;
     }
 
+    @XmlElement
     public int getVotes() {
         return votes;
     }
+
 
     public void setVotes(int votes) {
         this.votes = votes;
     }
 
+    @XmlElement(name="Vorugsstimmen")
     public List<PreferredMemberVotes> getPreferredMemberVotes() {
         return preferredMemberVotes;
     }

@@ -13,9 +13,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.fasterxml.jackson.core:jackson-databind' // Für JSON
+    implementation 'javax.xml.bind:jaxb-api:2.3.1' // Für XML
+    implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.3' // Für XML
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
+
 }
 
 test {

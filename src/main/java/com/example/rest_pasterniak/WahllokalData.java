@@ -1,9 +1,12 @@
 package com.example.rest_pasterniak;
 
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-
+@XmlRootElement(name = "electionData")
 public class WahllokalData {
     private String regionID;
     private String regionName;
@@ -18,6 +21,7 @@ public class WahllokalData {
         this.stimmen = new ArrayList<>();
     }
 
+    @XmlElement
     public String getRegionID() {
         return regionID;
     }
@@ -26,6 +30,7 @@ public class WahllokalData {
         this.regionID = regionID;
     }
 
+    @XmlElement
     public String getRegionName() {
         return regionName;
     }
@@ -34,6 +39,7 @@ public class WahllokalData {
         this.regionName = regionName;
     }
 
+    @XmlElement
     public String getRegionAddress() {
         return regionAddress;
     }
@@ -42,6 +48,7 @@ public class WahllokalData {
         this.regionAddress = regionAddress;
     }
 
+    @XmlElement
     public String getRegionPostalCode() {
         return regionPostalCode;
     }
@@ -50,6 +57,7 @@ public class WahllokalData {
         this.regionPostalCode = regionPostalCode;
     }
 
+    @XmlElement
     public String getFederalState() {
         return federalState;
     }
@@ -58,6 +66,7 @@ public class WahllokalData {
         this.federalState = federalState;
     }
 
+    @XmlElement
     public String getTimeStamp() {
         return timeStamp;
     }
@@ -66,6 +75,7 @@ public class WahllokalData {
         this.timeStamp = timeStamp;
     }
 
+    @XmlElement(name="Stimmen")
     public List<PartyVotes> getStimmen(String partei) {
         return stimmen;
     }

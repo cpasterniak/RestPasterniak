@@ -1,5 +1,9 @@
 package com.example.rest_pasterniak;
 
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class PreferredMemberVotes {
     private int index;
     private String name;
@@ -11,14 +15,17 @@ public class PreferredMemberVotes {
         this.votes = votes;
     }
 
+    @XmlElement
     public int getIndex() {
         return index;
     }
 
+    @XmlElement
     public String getName() {
         return name;
     }
 
+    @XmlElement
     public int getVotes() {
         return votes;
     }

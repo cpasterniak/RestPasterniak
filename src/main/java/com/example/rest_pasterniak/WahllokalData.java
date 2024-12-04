@@ -76,7 +76,7 @@ public class WahllokalData {
     }
 
     @XmlElement(name="Stimmen")
-    public List<PartyVotes> getStimmen(String partei) {
+    public List<PartyVotes> getStimmen() {
         return stimmen;
     }
 

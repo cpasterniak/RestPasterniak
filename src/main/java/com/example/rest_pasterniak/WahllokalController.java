@@ -22,6 +22,9 @@ public class WahllokalController {
     @RequestMapping(path = "/{inID}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public WahllokalData wohllokaljson(@PathVariable String inID) {
+        for(PartyVotes votes : service.getWahllokalData(inID).getStimmen()) {
+            System.out.println(votes);
+        }
         return service.getWahllokalData(inID);
     }
 

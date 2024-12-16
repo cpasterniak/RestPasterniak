@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Predicate;
 
+/**
+ * Simuliert Daten nach der Struktur von der Data Klasse
+ */
 public class WahllokalSimulation {
 
     public WahllokalSimulation() {}
@@ -20,6 +23,7 @@ public class WahllokalSimulation {
 
         Random generator = new Random();
 
+        // Parteien einer Liste hinzufügen und eine zufällige Anzahl von Stimmen mit einer Liste von "prefferdVotes"
         List<PartyVotes> votes = Arrays.asList(
                 new PartyVotes("OEVP", generator.nextInt(100, 300), prefferdVotes()),
                 new PartyVotes("FPOE", generator.nextInt(500, 1000), prefferdVotes()),
@@ -28,13 +32,15 @@ public class WahllokalSimulation {
 
         );
 
-
-
         data.setStimmen(votes);
 
         return data;
     }
 
+    /**
+     * Erstellt eine Liste von Vorzugsstimmen mit zufälliger Anzahl an Stimmen.
+     * @return gibt die Liste von den Vorzugsstimmen zurück
+     */
     public List<PreferredMemberVotes> prefferdVotes() {
         Random generator = new Random();
         List<PreferredMemberVotes> votes = new ArrayList<>();

@@ -6,6 +6,9 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+/**
+ * Attribute für alle Wahllokaldaten und eine Liste von Stimmen.
+ */
 @XmlRootElement(name = "electionData")
 public class WahllokalData {
     private String regionID;

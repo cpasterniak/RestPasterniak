@@ -3,6 +3,9 @@ package com.example.rest_pasterniak;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
+/**
+ * Vorzugsstimmen mit Attributen abgebildet
+ */
 @XmlRootElement
 public class PreferredMemberVotes {
     private int index;

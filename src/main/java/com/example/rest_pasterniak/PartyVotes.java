@@ -5,6 +5,9 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 
 import java.util.List;
 
+/**
+ * Attribute sind Daten von Parteien als Liste
+ */
 @XmlRootElement
 public class PartyVotes {
     private String partyName;

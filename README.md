@@ -1,6 +1,6 @@
 # Dokumentation REST
 
-Rest ist eine Art zu programmieren und sollte verwendet werden um einfache Web-APIs zu machen. REST wird in Controller, Application, Service und in Daten unterteilt. Controller arbeitet mit HTTP und verarbeitet die Anfragen und zeigt die Daten. 
+Rest ist eine Art zu programmieren und sollte verwendet werden, um einfache Web-APIs zu machen. REST wird in Controller, Application, Service und in Daten unterteilt. Controller arbeitet mit HTTP und verarbeitet die Anfragen und zeigt die Daten. 
 
     /**
      * Der Controller der mit HTTP arbeitet. Wird durch die Notation auch so von Spring interpretiert.
@@ -43,4 +43,14 @@ Rest ist eine Art zu programmieren und sollte verwendet werden um einfache Web-A
         }
     
     }
+
+Hier sieht man wie durch die URL was angezeigt wird.
+
+![](Images/XML.png)
+
+Das ist die XML-Struktur. Man sieht die Daten in einer Struktur, die man durch die Notation festgesetzt hat.
+
+![](Images/JSON.png)
+
+Die JSON-Struktur wird durch den MediaType bestimmt. Und wird auch in den Objekten verankert mit den Attributen.
 
